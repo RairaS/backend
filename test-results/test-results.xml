@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="6" failures="0" errors="0" time="0.66">
+  <testsuite name="Testando API de Produtos" errors="0" failures="0" skipped="0" timestamp="2025-02-23T17:02:48" time="0.606" tests="6">
+    <testcase classname="Testando API de Produtos GET /products deve retornar lista de produtos" name="Testando API de Produtos GET /products deve retornar lista de produtos" time="0.026">
+    </testcase>
+    <testcase classname="Testando API de Produtos GET /products/:id deve retornar um produto específico" name="Testando API de Produtos GET /products/:id deve retornar um produto específico" time="0.003">
+    </testcase>
+    <testcase classname="Testando API de Produtos GET /products/:id deve retornar 404 para produto inexistente" name="Testando API de Produtos GET /products/:id deve retornar 404 para produto inexistente" time="0.004">
+    </testcase>
+    <testcase classname="Testando API de Produtos POST /products deve criar um novo produto" name="Testando API de Produtos POST /products deve criar um novo produto" time="0.018">
+    </testcase>
+    <testcase classname="Testando API de Produtos DELETE /products/:id deve remover um produto" name="Testando API de Produtos DELETE /products/:id deve remover um produto" time="0.006">
+    </testcase>
+    <testcase classname="Testando API de Produtos DELETE /products/:id deve retornar 404 para produto inexistente" name="Testando API de Produtos DELETE /products/:id deve retornar 404 para produto inexistente" time="0.003">
+    </testcase>
+  </testsuite>
+</testsuites>
