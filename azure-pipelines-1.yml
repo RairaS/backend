@@ -23,7 +23,8 @@ steps:
 
 - task: PublishTestResults@2
   inputs:
-    testResultsFormat: 'JUnit'  # Pode ser outro formato, se necessário
-    testResultsFiles: 'test-results/test-results.xml'  # Altere para o local correto, se estiver gerando o arquivo de resultados
-    mergeTestResults: true
-    testRunTitle: 'Backend Test Results'
+    testResultsFiles: '**/test-results/test-results.xml'  # Ajuste o caminho conforme necessário
+    testRunTitle: 'Backend Tests'
+    mergeTestResults: true  # Para combinar os resultados, se houver vários arquivos
+  condition: succeededOrFailed()  # Para garantir que os resultados sejam publicados, mesmo que os testes falhem
+  displayName: 'Publish Test Results'
